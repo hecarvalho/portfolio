@@ -81,19 +81,3 @@ margin-right: 30px;
     margin-right: auto; 
     width: 50%;
 }
-
-.rodape {
-    border-top: 0.4px solid white;
-    background-color: black;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-}
-
-.rodape-imagem {
-    height:  120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-
-}

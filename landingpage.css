@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size:100% ;
+    background-color: whitesmoke;
+}
+
+.cabeçalho {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+}
+
+.cabeçalho-imagem {
+    height: 60px;
+}
+
+.cabeçalho-menu {
+    display:flex;
+    gap: 32px;
+}
+
+.cabeçalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cabeçalho-menu-item:hover{
+    color: #494848
+}
+
+.conteudo {
+   margin: 0px;
+    border-top: 0.4px solid white ;
+}
+
+.conteudo-principal {
+  margin-top: 50px;
+  margin-left: 50px; 
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-principal-escrito-titulo {
+    margin-left: 40px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: black;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    margin-top: 60px;
+    margin-left: 40px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+}
+
+.conteudo-principal-escrito-botao:hover{
+    background-color: #817b79;
+}
+
+.conteudo-principal-escrito-botao {
+    margin-left: 40px;
+    margin-top: 60px;
+    background-color: #cacaca;
+    width: 185px;
+    height: 60px;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 0px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #070707
+}
+
+.rodape {
+    border-top: 0.4px solid white;
+    background-color: black;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.rodape-imagem {
+    height:  120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.conteudo-principal-escrito-titulo {
+text-shadow: 4px 2px lightgrey;
+}
+
+.fotofront {
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    width: 30%;
+}

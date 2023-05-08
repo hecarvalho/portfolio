@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio Henrique Barbosa">
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="livecode.css">
+    <script src="https://kit.fontawesome.com/13c3bd5081.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="cabeçalho">
+        <img class="cabeçalho-imagem" src="0012.jpg" href="landingpage.html" alt="logo portfolio">
+        <nav class="cabeçalho-menu">
+            <a class="cabeçalho-menu-item" href="landingpage.html">Home </a>
+            <a class="cabeçalho-menu-item" href="sobremim.html">Sobre mim </a>
+            <a class="cabeçalho-menu-item" href="contato.html">Contato </a>    
+        </nav>
+    </header>
+
+<div class="container">
+    <div class="left">
+        <label><i class="fa-brands fa-html5"></i> HTML</label>
+        <textarea id="html-code" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+        <textarea id="css-code" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-js"></i> JavaScript</label>
+        <textarea id="js-code" onkeyup="run()"></textarea>
+    </div>    
+   
+    <div class="right">
+        <label><i class="fa-solid fa-play"></i> Output</label>
+        <iframe id="output"></iframe>
+    </div>
+</div>
+
+<script>
+    function run(){
+        let htmlCode = document.getElementById("html-code").value;
+        let cssCode = document.getElementById("css-code").value;
+        let jsCode = document.getElementById("js-code").value;
+        let output = document.getElementById("output");
+
+        output.contentDocument.body.innerHTML = htmlCode+ "<style>" +cssCode +"</style>";
+        output.contentWindow.eval(jsCode);
+    }
+
+</script>
+
+
+</body>

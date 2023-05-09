@@ -67,13 +67,14 @@ body {
 
 pre{
     width: 60%;
-    height: 40%;
     background: #1f1f1f;
     color: #fff;
     padding: 10px 20px;
     border: 0;
     outline: 0;
     font-size: 18px;
+    Overflow-y:scroll;
+    max-height: 300px;
 }
 
 label i{

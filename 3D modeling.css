@@ -47,7 +47,7 @@ body {
  }
 
 .header {
-    text-align: center;
+    margin-left: 750px;
     padding: 50px;
     font-family: 'Righteous', cursive;
     font-weight: 300;
@@ -61,7 +61,7 @@ body {
 
 .conteudo-principal-coluna1 {
     display: block;
-    margin-left: auto;
+    margin-left: 500px;
     margin-right: auto;
     margin-bottom: 20px;
     width: 50%;
@@ -77,7 +77,8 @@ margin-right: 30px;
 
 .conteudo-principal-coluna2 {
     display: block;
-    margin-left: auto;
+    margin-left: 500px;
     margin-right: auto; 
+    margin-bottom: 20px;
     width: 50%;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="portfolio Henrique Barbosa">
     <title>portfolio</title>
-    <link rel="stylesheet" type="text/css" href="3D modeling.css">
+    <link rel="stylesheet" type="text/css" href="exemplos.css">
 </head>
 
 <body>
@@ -19,3 +19,116 @@
             <a class="cabeçalho-menu-item" href="contato.html">Contato </a>    
         </nav>
     </header>
+
+    <div class="contaier">
+        <div class="projeto1">
+            <label> <b>LIVE CODE</b> <button> <b>TESTE AQUI</b> </button></label>
+                <pre>
+                    <code>
+                        HTML + JS
+    div class="container" 
+        div class="left"
+             label i class="fa-brands fa-html5" /i HTML label
+        textarea id="html-code" onkeyup="run()"textarea
+
+    label i class="fa-brands fa-css3-alt" i CSS label
+        textarea id="css-code" onkeyup="run()" textarea
+
+        label i class="fa-brands fa-js" /i JavaScript label
+        textarea id="js-code" onkeyup="run()" textarea
+    div  
+   
+    div class="right"
+        label i class="fa-solid fa-play" i Output label
+        iframe id="output" iframe
+        div
+    div
+
+    script
+        function run(){
+            let htmlCode = document.getElementById("html-code").value;
+            let cssCode = document.getElementById("css-code").value;
+            let jsCode = document.getElementById("js-code").value;
+            let output = document.getElementById("output");
+    
+            output.contentDocument.body.innerHTML = htmlCode+ "style" +cssCode +"style";
+            output.contentWindow.eval(jsCode);
+        }
+    script
+                           
+                                        CSS
+ @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+        body {
+        font-size:100% ;
+        background-color: whitesmoke;
+        color: #fff;
+        font-family: sans-serif;
+        }
+
+        .container{
+        width: 100%;
+        height: 100vh;
+        padding: 20px;    
+        display: flex;
+        }
+                            
+                            
+        .left, .right{
+        flex-basis: 50%;
+        padding: 10px;
+        }
+                            
+        textarea{
+        width: 100%;
+        height: 28%;
+        background: #1f1f1f;
+        color: #fff;
+        padding: 10px 20px;
+        border: 0;
+        outline: 0;
+        font-size: 18px;
+        }
+                            
+        iframe{
+        width: 100%;
+        height: 95%;
+        background: #838282;
+        border: 0;
+        outline: 0;
+        }
+                            
+        label i{
+        margin-right: 10px;
+        margin-left: 10px;
+        }
+                            
+        label{
+        display: flex;
+        align-items: center;
+        background: #000;
+        height: 30px;
+        }
+    
+                    </code>
+                </pre>
+        </div>
+        <div class="projeto2">    
+            <label> <b>projeto2</b> <button> <b>TESTE AQUI</b> </button></label>
+            <pre>
+                <code>
+
+                </code>
+            </pre>
+        </div>
+        <div class="projeto3">
+            <label><b>projeto3</b> <button> <b>TESTE AQUI</b> </button></label>
+            <pre>
+                <code>
+
+                </code>
+            </pre>
+        </div>
+
+    </div>
